@@ -115,7 +115,8 @@ const Detail = (props) => {
         >
           <Tabs defaultActiveKey="1" type="card" size={size}>
             <TabPane tab="Lịch Chiếu" key="1" className="container">
-              <Tabs tabPosition={tabPosition} className="container ml-32">
+              <Tabs tabPosition={tabPosition} className="container">
+                {/* ml-32 */}
                 {infoId.heThongRapChieu?.map((id, index) => {
                   return (
                     <TabPane
