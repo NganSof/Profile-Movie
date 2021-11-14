@@ -1,0 +1,13 @@
+export const SET_BANNER = "SET_BANNER";
+export const SET_LIST_FILM = "SET_LIST_FILM";
+export const SET_CAMERA_CLUSTER = "SET_CAMERA_CLUSTER";
+export const SET_INFO_SYSTEM_CLUSTER = "SET_INFO_SYSTEM_CLUSTER";
+export const SET_SYSTEM_CLUSTER = "SET_SYSTEM_CLUSTER";
+export const SET_INFO_FILM = "SET_INFO_FILM";
+export const SET_INFO_ID = " SET_INFO_ID";
+export const SEARCH_NAME_FILM = "SEARCH_NAME_FILM";
+export const INFO_USER = "INFO_USER";
+export const UPLOAD_IMAGE = "UPLOAD_IMAGE";
+export const REMOVE_USER = "REMOVE_USER";
+export const GET_CHECKOUT = "GET_CHECKOUT";
+export const SET_BOOKING = "SET_BOOKING";
