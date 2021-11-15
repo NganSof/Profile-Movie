@@ -75,7 +75,6 @@ const Detail = (props) => {
         <div className="grid grid-cols-12 gap-8 mt-10 sm:contents md:inline-grid">
           <div className="col-span-6 col-start-3 sm:inline-flex md:col-start-1 xl:col-start-2">
             <div className="grid grid-cols-3 sm:col-span-1 sm:-ml-8 md:col-span-2 md:ml-5 xl:col-span-3">
-              {/* sm:col-span-1 sm:-ml-8 */}
               <img
                 src={detail.hinhAnh}
                 alt="Ảnh Phim"

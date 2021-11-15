@@ -140,13 +140,16 @@ const Login = (props) => {
               <div className="text-red-300 ">
                 <img src={find} alt="find" className="w-24 h-24" />
               </div>
-              <div className="text-sm">
-                <a
+              <div
+                onClick={() => history.push("/signup")}
+                className="font-medium text-lg p-5 bg-red-300 rounded-2xl text-white tracking-wider shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white uppercase "
+              >
+                {/* <a
                   href="/signup"
                   className="font-medium text-lg p-5 bg-red-300 rounded-2xl text-white tracking-wider shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white uppercase "
-                >
-                  đăng ký tài khoản mới
-                </a>
+                > */}
+                đăng ký tài khoản mới
+                {/* </a> */}
               </div>
             </div>
             <div className="flex items-center justify-around">

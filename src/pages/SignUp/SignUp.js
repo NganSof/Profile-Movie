@@ -156,7 +156,6 @@ const SignUp = (props) => {
                   onBlur={formik.handleBlur}
                   value={formik.values.maNhom}
                   name="maNhom"
-                  // type="text"
                   className="appearance-none rounded-md relative block w-full px-3 py-2 border-b-4 border-yellow-300 placeholder-gray-500 text-gray-900 rounded-t-lg focus:outline-none focus:shadow-inner focus:border-yellow-600 focus:z-10 sm:text-sm"
                 />
 
