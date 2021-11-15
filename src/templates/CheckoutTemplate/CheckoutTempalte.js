@@ -1,12 +1,12 @@
 import { Route, Redirect } from "react-router";
 import { Fragment } from "react";
-import { USER_LOGIN } from "../../util/settings/config";
+import { TOKEN } from "../../util/settings/config";
 
 const CheckoutTemplate = (props) => {
   const { Component, ...restProps } = props;
-  // if (!localStorage.getItem(USER_LOGIN)) {
-  //   return <Redirect to="/login" />;
-  // }
+  if (!localStorage.getItem(TOKEN)) {
+    return <Redirect to="/login" />;
+  }
 
   return (
     <Route
