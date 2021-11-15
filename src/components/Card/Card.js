@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import { getInfoFilm } from "../../redux/actions/Carousel";
 import { Card } from "antd";
 import moment from "moment";
 
 const Cards = (props) => {
   const itemFilm = props.item;
-  const dispatch = useDispatch();
 
   return (
     <Card
@@ -33,8 +30,13 @@ const Cards = (props) => {
               Show
             </NavLink>
           </button>
-          <h2 title={itemFilm.tenPhim} className="cursor-default mb-0">
-            {itemFilm.tenPhim?.slice(0, 15) + " .."}
+          <h2
+            title={itemFilm.tenPhim}
+            className="cursor-default mb-0 font-bold text-right"
+          >
+            {itemFilm.tenPhim.length > 15
+              ? itemFilm.tenPhim.slice(0, 15) + "..."
+              : itemFilm.tenPhim}
           </h2>
         </div>
       </div>
