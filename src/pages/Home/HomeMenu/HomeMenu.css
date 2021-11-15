@@ -2,11 +2,6 @@
   border: none !important;
 }
 
-/* .slick-track {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-} */
-
 .ant-tabs-nav .ant-tabs-nav-wrap {
   justify-content: center;
   align-items: center;
@@ -39,7 +34,7 @@
     display: none !important;
   }
 }
-@media (max-with: 414) {
+@media (max-with: 375) {
   .slick-initialized .slick-slide {
     display: contents !important;
   }

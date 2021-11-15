@@ -106,7 +106,7 @@ const Login = (props) => {
             </h2>
           </div>
           <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-            <div className="rounded-md shadow-sm -space-y-px">
+            <div className="rounded-md shadow-sm -space-y-px sm:mx-1 md:mx-0">
               <div className="mb-7">
                 <input
                   onChange={formik.handleChange}
@@ -144,14 +144,16 @@ const Login = (props) => {
                 onClick={() => history.push("/signup")}
                 className="font-medium text-lg p-5 bg-red-300 rounded-2xl text-white tracking-wider shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white uppercase "
               >
-                {/* <a
-                  href="/signup"
-                  className="font-medium text-lg p-5 bg-red-300 rounded-2xl text-white tracking-wider shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white uppercase "
-                > */}
                 đăng ký tài khoản mới
-                {/* </a> */}
               </div>
             </div>
+            <div
+              onClick={() => history.push("/")}
+              className="md:hidden sm:block font-medium text-lg text-center bg-red-300 rounded-2xl text-white tracking-wider shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white uppercase"
+            >
+              về trang chủ
+            </div>
+
             <div className="flex items-center justify-around">
               <div
                 onClick={handleSubmit}
