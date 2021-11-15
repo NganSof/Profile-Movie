@@ -144,7 +144,7 @@ const InfoCheckOut = (props) => {
           fontSize: 25,
           fontWeight: "bold",
         }}
-        className="w-96 ml-8 mt-14 mb-28 py-6 sm:w-36 md:w-96"
+        className="w-96 ml-8 mt-14 inline-block mb-28 pb-6 sm:w-36 md:w-96"
       >
         ĐẶT VÉ
       </Button>
