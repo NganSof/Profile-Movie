@@ -11,7 +11,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <RightOutlined
-      className={`${className} md:block sm:none`}
+      className={`${className} `}
       style={{
         ...style,
         fontSize: 30,
@@ -27,7 +27,7 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <LeftOutlined
-      className={`${className} md:block sm:none`}
+      className={`${className}`}
       style={{
         ...style,
         color: "red",

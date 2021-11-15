@@ -74,7 +74,7 @@ const Detail = (props) => {
       >
         <div className="grid grid-cols-12 gap-8 mt-10 sm:contents md:inline-grid">
           <div className="col-span-6 col-start-3 sm:inline-flex md:col-start-1 xl:col-start-2">
-            <div className="grid grid-cols-3 sm:col-span-1 sm:-ml-8 md:col-span-2 md:ml-5 xl:col-span-3">
+            <div className="grid grid-cols-3 sm:inline-grid md:col-span-2 md:ml-5 xl:col-span-3">
               <img
                 src={detail.hinhAnh}
                 alt="Ảnh Phim"
@@ -96,14 +96,15 @@ const Detail = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-span-4 ml-40 sm:ml-16 md:ml-24 xl:ml-40">
-            <div style={{ width: 200, height: 200 }}>
+          <div className="col-span-4 ml-40 sm:ml-20 md:ml-24 xl:ml-40 sm:mt-20 md:mt-0">
+            <div className="w-48 h-44 sm:w-28 sm:h-28 md:w-48 md:h-48 ">
+              {/* style={{ width: 200, height: 200 }} */}
               <CircularProgressbar
                 value={detail.danhGia * 10}
                 text={`${detail.danhGia * 10}%`}
                 strokeWidth={5}
               />
-              <div className="mt-10 ml-10">
+              <div className="mt-10 ml-10 sm:ml-3 md:ml-10 sm:max-w-max md:w-full">
                 <Rate tooltips={desc} onChange={handleChange} value={value} />
               </div>
             </div>
