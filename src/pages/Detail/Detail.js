@@ -121,7 +121,7 @@ const Detail = (props) => {
                   return (
                     <TabPane
                       tab={
-                        <div className="flex justify-around items-center sm:w-20 sm:pl-3 md:pl-0 md:w-64 xl:w-full">
+                        <div className="flex justify-around items-center sm:w-14 sm:pl-3 md:pl-0 md:w-64 xl:w-full">
                           <img
                             src={id.logo}
                             alt="logo"
@@ -137,7 +137,7 @@ const Detail = (props) => {
                       {id.cumRapChieu?.map((cumRC, index) => {
                         return (
                           <div
-                            className="flex justify-around items-center mt-5 text-white sm:-ml-12 md:justify-around md:ml-0 xl:ml-8"
+                            className="flex justify-around items-center mt-5 text-white sm:-ml-10 md:justify-around md:ml-0 xl:ml-8"
                             key={index}
                           >
                             <img
