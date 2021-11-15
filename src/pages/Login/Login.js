@@ -136,14 +136,14 @@ const Login = (props) => {
                 )}
               </div>
             </div>
-            <div className="flex items-center justify-evenly">
+            <div className="flex items-center justify-evenly sm:flex-wrap md:justify-evenly">
               <div className="text-red-300 ">
                 <img src={find} alt="find" className="w-24 h-24" />
               </div>
-              <div className="text-sm ">
+              <div className="text-sm">
                 <a
                   href="/signup"
-                  className="font-medium text-lg p-5 bg-red-300 rounded-2xl text-white tracking-wider shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white uppercase"
+                  className="font-medium text-lg p-5 bg-red-300 rounded-2xl text-white tracking-wider shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white uppercase "
                 >
                   đăng ký tài khoản mới
                 </a>
@@ -152,7 +152,7 @@ const Login = (props) => {
             <div className="flex items-center justify-around">
               <div
                 onClick={handleSubmit}
-                className="w-full h-32 mr-5 items-center cursor-pointer flex justify-around border-blue-800 border-b-2 rounded-b-2xl shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2"
+                className="w-full h-32 mr-5 items-center cursor-pointer flex justify-around border-blue-800 border-b-2 rounded-b-2xl shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 sm:ml-5 md:ml-0"
               >
                 <div className="w-64 ">
                   <img src={tc} alt="thành công" />

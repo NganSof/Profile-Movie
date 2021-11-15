@@ -74,7 +74,8 @@ const Detail = (props) => {
       >
         <div className="grid grid-cols-12 gap-8 mt-10 sm:contents md:inline-grid">
           <div className="col-span-6 col-start-3 sm:inline-flex md:col-start-1 xl:col-start-2">
-            <div className="grid grid-cols-3 sm:flex md:col-span-2 md:ml-5 xl:col-span-3">
+            <div className="grid grid-cols-3 sm:col-span-1 sm:-ml-8 md:col-span-2 md:ml-5 xl:col-span-3">
+              {/* sm:col-span-1 sm:-ml-8 */}
               <img
                 src={detail.hinhAnh}
                 alt="Ảnh Phim"
@@ -116,12 +117,11 @@ const Detail = (props) => {
           <Tabs defaultActiveKey="1" type="card" size={size}>
             <TabPane tab="Lịch Chiếu" key="1" className="container">
               <Tabs tabPosition={tabPosition} className="container">
-                {/* ml-32 */}
                 {infoId.heThongRapChieu?.map((id, index) => {
                   return (
                     <TabPane
                       tab={
-                        <div className="flex justify-around items-center sm:w-40 md:w-64 xl:w-full">
+                        <div className="flex justify-around items-center sm:w-20 sm:pl-3 md:pl-0 md:w-64 xl:w-full">
                           <img
                             src={id.logo}
                             alt="logo"
@@ -137,7 +137,7 @@ const Detail = (props) => {
                       {id.cumRapChieu?.map((cumRC, index) => {
                         return (
                           <div
-                            className="flex justify-around items-center mt-5 text-white sm:ml-2 md:flex-none md:ml-0 xl:ml-8"
+                            className="flex justify-around items-center mt-5 text-white sm:-ml-12 md:justify-around md:ml-0 xl:ml-8"
                             key={index}
                           >
                             <img
@@ -146,7 +146,7 @@ const Detail = (props) => {
                               className="w-40 h-40 xl:w-40 xl:h-40 md:w-32 md:h-32 md:pl-5 md:ml-16 xl:ml-0 sm:hidden md:inline-flex"
                             />
                             <div className="ml-20">
-                              <div className="sm:w-44 xl:w-full xl:text-xl tracking-wide text-lg">
+                              <div className="sm:w-full md:w-full xl:w-full xl:text-xl tracking-wide text-lg">
                                 <div className="sm:w-32 md:w-60 md:pr-16 xl:w-full xl:pr-0">
                                   Tên rạp : {cumRC.tenCumRap}
                                 </div>
@@ -169,7 +169,7 @@ const Detail = (props) => {
                                           )}
                                         </p>
                                       </div>
-                                      <div className="grid col-span-2 my-10 text-xl shadow-2xl sm:-ml-10 md:ml-0">
+                                      <div className="grid col-span-2 my-10 text-xl shadow-2xl">
                                         <div className="flex justify-around items-center text-lg font-bold tracking-widest border-t-2 border-red-600 rounded-t-xl pt-10 sm:flex-wrap md:flex-none md:w-64 md:pr-16 xl:w-full xl:pr-0">
                                           <div className="md:pl-5 xl:pl-0">
                                             Tên rạp : {lc.tenRap}

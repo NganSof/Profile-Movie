@@ -37,7 +37,7 @@ const Theater = (props) => {
   return (
     <div
       id="dsCumRap"
-      className="ml-24 my-10 py-10 px-14 bg-red-200 rounded-t-2xl border-t-4 border-red-500 xl:ml-5 md:w-full md:mr-2 sm:ml-0 sm:w-96"
+      className="ml-24 my-10 py-10 px-14 bg-red-200 rounded-t-2xl border-t-4 border-red-500 xl:ml-5 md:w-full md:mr-2 sm:-ml-9 sm:w-96"
     >
       <h1 className="text-2xl py-6">Hệ thống cụm rạp</h1>
       <Tabs tabPosition={tabPosition} className="sm:mr-2 lg:mr-8 md:mr-5">

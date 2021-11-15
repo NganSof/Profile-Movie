@@ -106,25 +106,25 @@ const InfoCheckOut = (props) => {
         </div>
       </div>
       <hr />
-      <div className="py-2 my-14 font-bold tracking-widest text-black">
+      <div className="py-2 my-14 font-bold tracking-widest text-black sm:min-w-max sm:inline-block">
         Ghi Chú:
-        <div className="uppercase flex items-center mt-3">
+        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex ">
           <button className="bg-red-200 w-14 h-14 shadow-xl rounded-2xl mr-4"></button>
           <p> ghế thường</p>
         </div>
-        <div className="uppercase flex items-center mt-3">
+        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex ">
           <button className="bg-white w-14 h-14 shadow-xl rounded-2xl mr-4"></button>
           <p> ghế vip</p>
         </div>
-        <div className="uppercase flex items-center mt-3">
+        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex ">
           <button className="bg-red-700 w-14 h-14 shadow-xl rounded-2xl mr-4"></button>
           <p> ghế đã đặt</p>
         </div>
-        <div className="uppercase flex items-center mt-3">
+        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex ">
           <button className="bg-green-400 w-14 h-14 shadow-xl rounded-2xl mr-4"></button>
           <p> ghế được chọn</p>
         </div>
-        <div className="uppercase flex items-center mt-3">
+        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex ">
           <button className="bg-yellow-500 w-14 h-14 shadow-xl rounded-2xl mr-4"></button>
           <p> ghế bạn đã đặt</p>
         </div>
@@ -144,13 +144,13 @@ const InfoCheckOut = (props) => {
           fontSize: 25,
           fontWeight: "bold",
         }}
-        className="w-96 ml-8 mt-14 inline-block mb-28 pb-6 sm:w-36 md:w-96"
+        className="w-96 ml-8 mt-14 inline-block mb-28 pb-6 sm:w-32 sm:ml-0 md:ml-8 md:w-96"
       >
         ĐẶT VÉ
       </Button>
       <div className="py-2 mt-18">
         <h2 className="uppercase text-red-600 font-extrabold ">lưu ý</h2>
-        <div className="italic text-red-900 font-bold tracking-wide py-2">
+        <div className="italic text-red-900 font-bold tracking-wide py-2 md:w-96 sm:w-full">
           <span>* </span>
           VÉ ĐÃ MUA SẼ KHÔNG THỂ ĐỔI HOẶC HOÀN LẠI TIÈN . <br />
           <span>* </span> MỜI BẠN KIỂM TRA LẠI VÉ TRƯỚC KHI THAO TÁC

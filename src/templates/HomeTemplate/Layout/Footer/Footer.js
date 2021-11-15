@@ -10,7 +10,7 @@ const Footer = (props) => {
       <footer className="py-6 px-20 dark:bg-coolGray-800 dark:text-coolGray-50">
         <div className="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
           <div className="flex justify-around items-center md:justify-around md:w-full sm:flex-wrap sm:w-72">
-            <div className="pb-6 w-72 md:pb-0 md:col-span-6">
+            <div className="pb-6 w-72 md:pb-0 md:col-span-6 sm:-ml-24 md:ml-0">
               <div className="w-36 h-36 mb-5 ml-12 text-center rounded-full dark:bg-teal-400">
                 <a href="/">
                   <img alt="logo" src={img} title="Movie Web" />
@@ -27,7 +27,7 @@ const Footer = (props) => {
                 </a>
               </div>
             </div>
-            <div className="pb-6 w-72 md:pb-0 md:col-span-6">
+            <div className="pb-6 w-72 md:pb-0 md:col-span-6 sm:-ml-24 md:ml-0 ">
               <div className="w-36 h-36 mb-5 ml-12 text-center rounded-full dark:bg-teal-400">
                 <a href="/">
                   <img alt="logo" src={dv} title="Đặt Vé" />
@@ -44,11 +44,11 @@ const Footer = (props) => {
                 </a>
               </div>
             </div>
-            <div className=" w-72 text-center md:text-left md:col-span-3 xl:text-center">
-              <p className="pb-1 text-xl mt-10 font-medium text-center">
+            <div className="w-72 text-center md:text-left md:col-span-3 xl:text-center">
+              <p className="pb-1 text-xl mt-10 font-medium text-center sm:-ml-24 md:ml-0">
                 Đối tác đồng hành
               </p>
-              <ul className="grid grid-cols-3 gap-2">
+              <ul className="grid grid-cols-3 gap-2 sm:-ml-24 md:ml-0">
                 {cluster?.map((logo, index) => {
                   return (
                     <li className="px-4">
@@ -76,7 +76,7 @@ const Footer = (props) => {
               </ul>
             </div>
           </div>
-          <div className="flex justify-around items-center pt-12 lg:justify-between md:flex xl:w-full md:pl-0 md:py-5 sm:inline-block sm:py-4 sm:pl-6">
+          <div className="flex justify-around items-center pt-12 lg:justify-between md:flex xl:w-full md:pl-0 md:py-5 sm:inline-block sm:py-4 sm:pl-0">
             <div className="border-r-2 pr-12 w-1/2 text-center border-solid border-green-700 self-center text-lg md:block lg:col-start-1 xl:border-green-700 md:space-x-6 xl:w-full sm:border-none sm:w-full">
               <div>©2021 All rights reserved</div>
               <div>
