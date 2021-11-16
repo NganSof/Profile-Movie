@@ -10,3 +10,19 @@
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+@media (min-width: 375px) {
+  .ant-tabs-nav .ant-tabs-nav-wrap {
+    justify-content: flex-start !important;
+  }
+  .ant-tabs-nav-wrap .ant-tabs-nav-wrap-ping-right::before {
+    justify-content: flex-start !important;
+  }
+}
+@media (min-width: 768px) {
+  .ant-tabs-nav .ant-tabs-nav-wrap {
+    justify-content: center !important;
+  }
+  .ant-tabs-nav-wrap .ant-tabs-nav-wrap-ping-right::before {
+    justify-content: center !important;
+  }
+}

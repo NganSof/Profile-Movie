@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getInfoSystemCluster } from "../../redux/actions/QuanLyRap";
 import { Tabs } from "antd";
+import "./Tab.css";
 const { TabPane } = Tabs;
 
 const Tab = (props) => {

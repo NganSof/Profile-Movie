@@ -39,7 +39,7 @@ const Search = (props) => {
 
   return (
     <div className="p-8 mr-32 md:pr-20 xl:mr-0 xl:pl-10" id="SearchFilm">
-      <div className="bg-white flex items-center rounded-full shadow-xl w-full xl:text-lg xl:font-bold xl:w-1/2 md:ml-50 md:w-2/3">
+      <div className="bg-white flex items-center rounded-full shadow-xl w-full xl:text-lg xl:font-bold xl:w-1/2 md:ml-50 md:w-2/3 sm:w-72">
         <input
           // onChange={formik.handleChange}
           // onBlur={formik.handleBlur}

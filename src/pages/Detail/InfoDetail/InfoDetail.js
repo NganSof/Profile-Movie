@@ -1,8 +1,11 @@
 import moment from "moment";
 import React from "react";
 import ReactPlayer from "react-player";
+import { useMediaQuery } from "react-responsive";
 
 const InfoDetail = (props) => {
+  const MDScreen = useMediaQuery({ query: "(min-width: 768px)" });
+
   const item = props.detail;
   console.log("item", item);
   return (
@@ -36,8 +39,13 @@ const InfoDetail = (props) => {
             </p>
           </div>
         </div>
-        <div className="md:mt-6 xl:mt-0 sm:mt-10 sm:-ml-5 md:ml-0">
-          <ReactPlayer url={item.trailer} width="400px" light controls={true} />
+        <div className="md:mt-6 xl:mt-0 sm:mt-10 sm:-ml-4 md:ml-0">
+          <ReactPlayer
+            url={item.trailer}
+            width={MDScreen ? "500px" : "280px"}
+            light
+            controls={true}
+          />
         </div>
       </div>
     </div>

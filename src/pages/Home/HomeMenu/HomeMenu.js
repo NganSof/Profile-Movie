@@ -3,40 +3,77 @@ import Slider from "react-slick";
 import { Tabs } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import Cards from "../../../components/Card/Card";
+import { useMediaQuery } from "react-responsive";
 import sty from "./HomeMenu.css";
 
 const { TabPane } = Tabs;
 
 function SampleNextArrow(props) {
+  const ScreenMD = useMediaQuery({ query: "(min-width: 769px)" });
   const { className, style, onClick } = props;
+
   return (
-    <RightOutlined
-      className={`${className} `}
-      style={{
-        ...style,
-        fontSize: 30,
-        paddingRight: 20,
-        color: "red",
-        zIndex: 50,
-      }}
-      onClick={onClick}
-    />
+    <>
+      {ScreenMD ? (
+        <RightOutlined
+          className={`${className} `}
+          style={{
+            ...style,
+            fontSize: 30,
+            paddingRight: 20,
+            color: "red",
+            zIndex: 50,
+          }}
+          onClick={onClick}
+        />
+      ) : (
+        <RightOutlined
+          className={`${className} `}
+          style={{
+            ...style,
+            fontSize: 30,
+            paddingRight: 69,
+            display: "none",
+            color: "red",
+            zIndex: 50,
+          }}
+          onClick={onClick}
+        />
+      )}
+    </>
   );
 }
 function SamplePrevArrow(props) {
+  const ScreenMD = useMediaQuery({ query: "(min-width: 769px)" });
   const { className, style, onClick } = props;
   return (
-    <LeftOutlined
-      className={`${className}`}
-      style={{
-        ...style,
-        color: "red",
-        zIndex: 50,
-        paddingRight: 30,
-        fontSize: 30,
-      }}
-      onClick={onClick}
-    />
+    <>
+      {ScreenMD ? (
+        <LeftOutlined
+          className={`${className} `}
+          style={{
+            ...style,
+            color: "red",
+            zIndex: 50,
+            paddingRight: 20,
+            fontSize: 30,
+          }}
+          onClick={onClick}
+        />
+      ) : (
+        <LeftOutlined
+          className={`${className} `}
+          style={{
+            ...style,
+            color: "red",
+            zIndex: 50,
+            paddingRight: 69,
+            fontSize: 30,
+          }}
+          onClick={onClick}
+        />
+      )}
+    </>
   );
 }
 const HomeMenu = (prop) => {

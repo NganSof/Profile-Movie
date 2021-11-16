@@ -148,10 +148,10 @@ const Login = (props) => {
               </div>
             </div>
             <div
-              onClick={() => history.push("/")}
+              onClick={() => history.goBack()}
               className="md:hidden sm:block font-medium text-lg text-center bg-red-300 rounded-2xl text-white tracking-wider shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white uppercase"
             >
-              về trang chủ
+              {`<<< quay lại`}
             </div>
 
             <div className="flex items-center justify-around">

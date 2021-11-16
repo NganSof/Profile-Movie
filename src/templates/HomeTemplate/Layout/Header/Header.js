@@ -25,7 +25,7 @@ const Header = (props) => {
       }}
     >
       <Menu.Item key="0" className="hover:text-yellow-500 text-red-700">
-        <NavLink to="/profile" className="text-lg  italic">
+        <NavLink to="/profile" className="text-lg italic">
           Thông tin {infoUser.taiKhoan}{" "}
         </NavLink>
       </Menu.Item>

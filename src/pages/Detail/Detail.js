@@ -74,7 +74,7 @@ const Detail = (props) => {
       >
         <div className="grid grid-cols-12 gap-8 mt-10 sm:contents md:inline-grid">
           <div className="col-span-6 col-start-3 sm:inline-flex md:col-start-1 xl:col-start-2">
-            <div className="grid grid-cols-3 sm:inline-grid md:col-span-2 md:ml-5 xl:col-span-3">
+            <div className="grid grid-cols-3 sm:block md:grid md:col-span-2 md:ml-5 xl:col-span-3">
               <img
                 src={detail.hinhAnh}
                 alt="Ảnh Phim"
@@ -98,13 +98,12 @@ const Detail = (props) => {
           </div>
           <div className="col-span-4 ml-40 sm:ml-20 md:ml-24 xl:ml-40 sm:mt-20 md:mt-0">
             <div className="w-48 h-44 sm:w-28 sm:h-28 md:w-48 md:h-48 ">
-              {/* style={{ width: 200, height: 200 }} */}
               <CircularProgressbar
                 value={detail.danhGia * 10}
                 text={`${detail.danhGia * 10}%`}
                 strokeWidth={5}
               />
-              <div className="mt-10 ml-10 sm:ml-3 md:ml-10 sm:max-w-max md:w-full">
+              <div className="mt-10 ml-10 sm:ml-3 md:ml-10 sm:w-max md:w-full">
                 <Rate tooltips={desc} onChange={handleChange} value={value} />
               </div>
             </div>
@@ -121,11 +120,11 @@ const Detail = (props) => {
                   return (
                     <TabPane
                       tab={
-                        <div className="flex justify-around items-center sm:w-14 sm:pl-3 md:pl-0 md:w-64 xl:w-full">
+                        <div className="flex justify-around items-center sm:w-14 sm:pl-3 md:pl-0 md:w-64 xl:w-full sm:inline-flex md:justify-around">
                           <img
                             src={id.logo}
                             alt="logo"
-                            className="w-20 h-20 mr-10 md:w-12 md:h-12 md:ml-4 xl:w-20 xl:h-20 "
+                            className="w-20 h-20 mr-10 md:w-12 md:h-12 md:ml-4 xl:w-20 xl:h-20 sm:object-contain"
                           />
                           <div className="sm:hidden md:inline-flex md:text-xl md:pr-5 xl:text-4xl uppercase">
                             {id.tenHeThongRap}
