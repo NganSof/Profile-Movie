@@ -53,8 +53,8 @@ const InfoCheckOut = (props) => {
 
   return (
     <div>
-      <div className="mt-2 text-center text-4xl text-red-600 flex">
-        <h3>Tổng tiền : {total()} </h3>
+      <div className="mt-2 text-center text-4xl flex  sm:text-2xl md:text-4xl">
+        <h3 className="text-red-600 ">Tổng tiền : {total()} </h3>
         {/* <CurrencyFormat
           className="w-72 pl-4 pb-4 focus:outline-none"
           value={total()}

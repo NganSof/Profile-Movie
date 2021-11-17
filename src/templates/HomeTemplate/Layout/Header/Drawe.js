@@ -68,7 +68,7 @@ const Drawe = (props) => {
         <ul className="items-stretch space-x-3 xl:flex text-left">
           <li className="flex pl-2 h-16">
             <span
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-xl text-yellow-300 hover:text-red-600"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-xl text-yellow-800 hover:text-red-600"
               onClick={handleScrollViewList}
             >
               Danh sách phim
@@ -76,7 +76,7 @@ const Drawe = (props) => {
           </li>
           <li className="flex h-16">
             <span
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-xl text-yellow-300 hover:text-red-600"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-xl text-yellow-800 hover:text-red-600"
               onClick={handleScrollViewCinema}
             >
               Cụm rạp
@@ -84,7 +84,7 @@ const Drawe = (props) => {
           </li>
           <li className="flex h-16">
             <span
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-xl text-yellow-300 hover:text-red-600"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-xl text-yellow-800 hover:text-red-600"
               onClick={handleScrollViewFilm}
             >
               Tìm phim mới
@@ -95,7 +95,7 @@ const Drawe = (props) => {
               <div>
                 <NavLink
                   to="/profile"
-                  className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-yellow-300 text-xl hover:text-red-600"
+                  className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-yellow-800 text-xl hover:text-red-600"
                 >
                   Thông tin {infoUser.taiKhoan}
                 </NavLink>
@@ -105,7 +105,7 @@ const Drawe = (props) => {
                     localStorage.removeItem("tokenUser");
                     dispatch(CreateAction(REMOVE_USER));
                   }}
-                  className="flex items-center px-4 mt-10 -mb-1 border-b-2 border-transparent text-yellow-300 text-xl hover:text-red-600"
+                  className="flex items-center px-4 mt-10 -mb-1 border-b-2 border-transparent text-yellow-800 text-xl hover:text-red-600"
                 >
                   Đăng xuất
                 </NavLink>
@@ -119,7 +119,7 @@ const Drawe = (props) => {
                 />
                 <NavLink
                   to="/login"
-                  className="w-80 pl-8 mt-2 -mb-1 border-b-2 border-transparent text-yellow-300 text-xl hover:text-red-600"
+                  className="w-80 pl-8 mt-2 -mb-1 border-b-2 border-transparent text-yellow-800 text-xl hover:text-red-600"
                 >
                   Đăng nhập
                 </NavLink>

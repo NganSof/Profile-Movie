@@ -67,6 +67,7 @@ function SamplePrevArrow(props) {
             ...style,
             color: "red",
             zIndex: 50,
+            display: "none",
             paddingRight: 69,
             fontSize: 30,
           }}
@@ -131,7 +132,7 @@ const HomeMenu = (prop) => {
       <Tabs defaultActiveKey="1" className="z-10" id="dsPhim">
         <TabPane tab="Đang Chiếu" key="1">
           <Slider {...settings} className="z-30">
-            {arrDC?.slice(0, 12).map((item, index) => {
+            {arrDC?.map((item, index) => {
               return (
                 <div className="mt-7">
                   <Cards item={item} key={index} />
@@ -142,7 +143,7 @@ const HomeMenu = (prop) => {
         </TabPane>
         <TabPane tab="Sắp Chiếu" key="2">
           <Slider {...settings}>
-            {arrSC?.slice(0, 10).map((item, index) => {
+            {arrSC?.map((item, index) => {
               return (
                 <div className="mt-7">
                   <Cards item={item} key={index} />

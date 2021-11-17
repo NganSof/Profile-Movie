@@ -79,7 +79,10 @@ const SignUp = (props) => {
       </div>
 
       <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
-        <div className="w-1/2 h-1/2 mb-10 sm:hidden md:inline-flex">
+        <div
+          className="w-1/2 h-1/2 mb-10 sm:hidden md:inline-flex"
+          onClick={() => history.goBack()}
+        >
           <img src={signup} alt="signin" />
         </div>
         <div>
@@ -197,7 +200,7 @@ const SignUp = (props) => {
                     type="submit"
                     className="group relative w-full text-2xl border border-transparent font-extrabold uppercase tracking-widest"
                   >
-                    Sign Up
+                    Đăng Kí
                   </button>
                 )}
               </div>

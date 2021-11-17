@@ -170,10 +170,10 @@ const Detail = (props) => {
                                       </div>
                                       <div className="grid col-span-2 my-10 text-xl shadow-2xl">
                                         <div className="flex justify-around items-center text-lg font-bold tracking-widest border-t-2 border-red-600 rounded-t-xl pt-10 sm:flex-wrap md:flex-none md:w-64 md:pr-16 xl:w-full xl:pr-0">
-                                          <div className="md:pl-5 xl:pl-0">
+                                          <div className="md:pl-5 xl:pl-0 sm:pl-4">
                                             Tên rạp : {lc.tenRap}
                                           </div>
-                                          <div className="md:pl-5 xl:pl-0">
+                                          <div className="md:pl-5 xl:pl-0 sm:pl-4">
                                             Mã rạp : {lc.maRap}
                                           </div>
                                         </div>

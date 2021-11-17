@@ -45,7 +45,7 @@ const Login = (props) => {
     dispatch(
       fetchSignIn(formik.values, () => {
         setIcona(!icona);
-        history.push("/");
+        history.push("/home");
         window.location.reload();
       })
     );
@@ -93,7 +93,10 @@ const Login = (props) => {
         )}
       </div>
       <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
-        <div className="w-1/3 h-1/3 sm:hidden md:inline-flex">
+        <div
+          className="w-1/3 h-1/3 sm:hidden md:inline-flex"
+          onClick={() => history.goBack()}
+        >
           <img src={signin} alt="signin" />
         </div>
         <div>
@@ -167,7 +170,7 @@ const Login = (props) => {
                     type="submit"
                     className="group relative w-full text-lg py-2 px-4 border border-transparent font-medium rounded-2xl text-white tracking-wider"
                   >
-                    Sign in
+                    Đăng Nhập
                   </button>
                 )}
               </div>
@@ -183,7 +186,7 @@ const Login = (props) => {
                     type="button"
                     className="group relative w-full text-lg py-2 px-4 border border-transparent font-medium rounded-2xl text-white tracking-wider"
                   >
-                    Fill Form
+                    Thông Tin Cũ
                   </button>
                 )}
               </div>
