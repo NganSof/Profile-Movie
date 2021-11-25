@@ -38,12 +38,12 @@ const Tab = (props) => {
       return (
         <TabPane
           tab={
-            <button
+            <div
               onClick={() => setVisible(true)}
-              className="text-lg p-5 text-yellow-900 bg-yellow-200 border-2 border-green-700 rounded-md md:w-96 md:overflow-hidden md:h-auto sm:w-44 sm:overflow-auto sm:-ml-2 md:ml-0"
+              className="cursor-pointer text-lg p-5  text-white bg-red-300 shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white  border-2 border-yellow-600 rounded-md md:w-96 md:overflow-hidden md:h-auto sm:w-44 sm:overflow-auto sm:-ml-2 md:ml-0"
             >
               {info.tenCumRap}
-            </button>
+            </div>
           }
           key={index}
         >

@@ -52,8 +52,8 @@ const InfoCheckOut = (props) => {
   };
 
   return (
-    <div>
-      <div className="mt-2 text-center text-4xl flex  sm:text-2xl md:text-4xl">
+    <div className="text-white">
+      <div className="mt-2 text-center text-4xl flex sm:text-2xl md:text-4xl">
         <h3 className="text-red-600 ">Tổng tiền : {total()} </h3>
         {/* <CurrencyFormat
           className="w-72 pl-4 pb-4 focus:outline-none"
@@ -63,8 +63,10 @@ const InfoCheckOut = (props) => {
         /> */}
       </div>
       <hr />
-      <div className=" py-2">
-        <h3 className="text-center text-2xl">{thongTinPhim?.tenPhim}</h3>
+      <div className="py-2 ">
+        <h3 className="text-center text-yellow-600 text-2xl">
+          {thongTinPhim?.tenPhim}
+        </h3>
         <p className="font-bold tracking-wider">{thongTinPhim?.tenCumRap}</p>
         <p>{thongTinPhim?.diaChi}</p>
         <div className="flex flex-row">
@@ -94,7 +96,7 @@ const InfoCheckOut = (props) => {
       <hr />
       <div className="flex justify-between py-2 sm:flex-wrap md:justify-between">
         <div>
-          <h4 className="text-xl">Mã giảm giá</h4>
+          <h4 className="text-xl text-yellow-600">Mã giảm giá</h4>
           <input
             className="focus:outline-none hover:shadow-inner"
             placeholder="Nhập mã giảm"
@@ -106,25 +108,25 @@ const InfoCheckOut = (props) => {
         </div>
       </div>
       <hr />
-      <div className="py-2 my-14 font-bold tracking-widest text-black sm:min-w-max sm:inline-block">
+      <div className="py-2 my-14 text-md font-bold tracking-widest text-red-500 sm:min-w-max sm:inline-block">
         Ghi Chú:
-        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex ">
+        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex text-white">
           <button className="bg-red-200 w-14 h-14 shadow-xl rounded-2xl mr-4"></button>
           <p> ghế thường</p>
         </div>
-        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex ">
+        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex text-white">
           <button className="bg-white w-14 h-14 shadow-xl rounded-2xl mr-4"></button>
           <p> ghế vip</p>
         </div>
-        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex ">
+        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex text-white">
           <button className="bg-red-700 w-14 h-14 shadow-xl rounded-2xl mr-4"></button>
           <p> ghế đã đặt</p>
         </div>
-        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex ">
+        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex text-white">
           <button className="bg-green-400 w-14 h-14 shadow-xl rounded-2xl mr-4"></button>
           <p> ghế được chọn</p>
         </div>
-        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex ">
+        <div className="uppercase flex items-center mt-3 sm:table-caption md:flex text-white">
           <button className="bg-yellow-500 w-14 h-14 shadow-xl rounded-2xl mr-4"></button>
           <p> ghế bạn đã đặt</p>
         </div>
@@ -149,8 +151,10 @@ const InfoCheckOut = (props) => {
         ĐẶT VÉ
       </Button>
       <div className="py-2 mt-18">
-        <h2 className="uppercase text-red-600 font-extrabold ">lưu ý</h2>
-        <div className="italic text-red-900 font-bold tracking-wide py-2 md:w-96 sm:w-full">
+        <h2 className="uppercase text-red-600 font-extrabold tracking-wider">
+          lưu ý
+        </h2>
+        <div className="italic text-red-700 font-bold tracking-wide py-2 md:w-full sm:w-full">
           <span>* </span>
           VÉ ĐÃ MUA SẼ KHÔNG THỂ ĐỔI HOẶC HOÀN LẠI TIÈN . <br />
           <span>* </span> MỜI BẠN KIỂM TRA LẠI VÉ TRƯỚC KHI THAO TÁC

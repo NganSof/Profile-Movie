@@ -85,7 +85,7 @@ const Header = (props) => {
   return (
     <div
       className={
-        scroll ? "bg-red-800 h-24 w-full fixed z-40 " : "bg-transparent"
+        scroll ? "bg-gray-700 h-24 w-full fixed z-40 " : "bg-transparent"
       }
     >
       <header className="p-4 h-24 w-full z-10 decoration-slice ">
