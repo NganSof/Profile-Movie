@@ -7,6 +7,7 @@ import tc from "../../assets/1103-confetti-outline.webp";
 import signup from "../../assets/955-demand-outline.webp";
 import * as yup from "yup";
 import { fetchSignUp } from "../../redux/actions/QuanLyNguoiDung";
+import style from "../../components/Card/Card.css";
 
 const schema = yup.object().shape({
   taiKhoan: yup
@@ -59,7 +60,7 @@ const SignUp = (props) => {
       })
     );
   };
-
+  const { sha } = style;
   return (
     <div className="bg-red-300" style={{ minHeight: "100vh" }}>
       <div className="pt-4 ml-32">
@@ -88,7 +89,7 @@ const SignUp = (props) => {
         <div>
           <div className="max-w-md w-full text-center ">
             <h2
-              className=" text-3xl font-bold italic uppercase"
+              className="text-3xl font-bold italic uppercase"
               style={{ textShadow: "0px 10px 10px  #FECACA", color: "#FFFFFF" }}
             >
               mời bạn đăng ký
@@ -190,9 +191,9 @@ const SignUp = (props) => {
             <div>
               <div
                 onClick={handleSubmit}
-                className="w-full h-20 mr-5 items-center cursor-pointer flex justify-around shadow-2xl bg-red-300 rounded-2xl text-white hover:shadow-inner hover:text-red-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2"
+                className="sha w-full h-20 mr-5 items-center cursor-pointer flex justify-around shadow-2xl bg-red-300 rounded-2xl text-white hover:shadow-inner hover:text-red-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2"
               >
-                <div className="w-64 ">
+                <div className="w-64">
                   <img src={tc} alt="thành công" />
                 </div>
                 {icona && (

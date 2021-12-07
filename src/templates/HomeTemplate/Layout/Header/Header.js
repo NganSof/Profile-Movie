@@ -85,7 +85,9 @@ const Header = (props) => {
   return (
     <div
       className={
-        scroll ? "bg-gray-700 h-24 w-full fixed z-40 " : "bg-transparent"
+        scroll
+          ? "bg-red-900 h-24 w-full fixed z-40 shadow-2xl rounded-b-3xl"
+          : "bg-transparent"
       }
     >
       <header className="p-4 h-24 w-full z-10 decoration-slice ">
@@ -114,7 +116,7 @@ const Header = (props) => {
             </li>
             <li className="flex">
               <span
-                className="flex items-center cursor-pointer  px-4 -mb-1 border-b-2 border-transparent text-yellow-300 text-xl hover:text-red-600"
+                className="flex items-center cursor-pointer px-4 -mb-1 border-b-2 border-transparent text-yellow-300 text-xl hover:text-red-600"
                 onClick={handleScrollViewFilm}
               >
                 Tìm phim mới

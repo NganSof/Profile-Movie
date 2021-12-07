@@ -15,7 +15,6 @@ import { useHistory, useParams } from "react-router";
 import CurrencyFormat from "react-currency-format";
 
 const { TabPane } = Tabs;
-
 const Detail = (props) => {
   // const { idMovie } = props.match.params;
   const { idMovie } = useParams();
@@ -54,6 +53,7 @@ const Detail = (props) => {
   const handleBooking = (maLichChieu) => {
     history.push(`/checkout/${maLichChieu}`);
   };
+
   return (
     <div
       style={{
@@ -196,7 +196,7 @@ const Detail = (props) => {
                                               onClick={() =>
                                                 handleBooking(lc.maLichChieu)
                                               }
-                                              className=" text-white font-extrabold tracking-wide uppercase rounded-xl bg-red-800 shadow-2xl hover:text-red-800 hover:bg-white p-3"
+                                              className="text-white font-extrabold tracking-wide uppercase rounded-xl bg-red-800 shadow-2xl hover:text-red-800 hover:bg-white p-3"
                                             >
                                               đặt vé
                                             </button>

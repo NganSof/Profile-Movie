@@ -9,6 +9,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { Alert, Button } from "antd";
 import { fetchSignIn } from "../../redux/actions/QuanLyNguoiDung";
+import style from "../../components/Card/Card.css";
 
 const schema = yup.object().shape({
   taiKhoan: yup
@@ -59,7 +60,7 @@ const Login = (props) => {
     };
     formik.setValues(defaultplayer);
   };
-
+  const { sha } = style;
   return (
     <div className="bg-red-300" style={{ minHeight: "100vh" }}>
       <div className="pt-8 ml-44">
@@ -145,7 +146,7 @@ const Login = (props) => {
               </div>
               <div
                 onClick={() => history.push("/signup")}
-                className="font-medium text-lg p-5 bg-red-300 rounded-2xl text-white tracking-wider shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white uppercase "
+                className="sha font-medium text-lg p-5 bg-red-300 rounded-2xl text-white tracking-wider shadow-2xl hover:shadow-inner hover:text-red-300 hover:bg-white uppercase "
               >
                 đăng ký tài khoản mới
               </div>
@@ -160,7 +161,7 @@ const Login = (props) => {
             <div className="flex items-center justify-around">
               <div
                 onClick={handleSubmit}
-                className="w-full h-32 mr-5 items-center cursor-pointer flex justify-around border-blue-800 border-b-2 rounded-b-2xl shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 sm:ml-5 md:ml-0"
+                className="sha w-full h-32 mr-5 items-center cursor-pointer flex justify-around border-blue-800 border-b-2 rounded-b-2xl shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 sm:ml-5 md:ml-0"
               >
                 <div className="w-64 ">
                   <img src={tc} alt="thành công" />
@@ -176,7 +177,7 @@ const Login = (props) => {
               </div>
               <div
                 onClick={handleSetDefault}
-                className="w-full h-32 items-center cursor-pointer flex justify-around border-blue-800 border-b-2 rounded-b-2xl shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 sm:hidden md:inline-flex"
+                className="sha w-full h-32 items-center cursor-pointer flex justify-around border-blue-800 border-b-2 rounded-b-2xl shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 sm:hidden md:inline-flex"
               >
                 <div className="w-64">
                   <img src={fill} alt="fill form" />

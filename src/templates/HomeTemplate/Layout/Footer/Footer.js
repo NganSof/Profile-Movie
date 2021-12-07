@@ -6,7 +6,10 @@ import dv from "../../../../assets/1876-cinema-outline.webp";
 const Footer = (props) => {
   const { cluster } = useSelector((state) => state.QuanLyRap);
   return (
-    <div style={{ backgroundColor: "#d1cfc8", minHeight: "85vh" }}>
+    // "#d1cfc8"
+    <div
+      style={{ backgroundColor: "#9D5A6A", minHeight: "85vh", color: "white" }}
+    >
       <footer className="py-6 px-20 dark:bg-coolGray-800 dark:text-coolGray-50">
         <div className="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
           <div className="flex justify-around items-center md:justify-around md:w-full sm:flex-wrap sm:w-72">
@@ -18,12 +21,12 @@ const Footer = (props) => {
               </div>
               <div className="py-3 text-lg mb-3 pl-14 hover:border-black hover:shadow-inner border-b-2 border-solid">
                 <a href="/home">
-                  <span className="text-black">Thỏa thuận sử dụng</span>
+                  <span className="text-white">Thỏa thuận sử dụng</span>
                 </a>
               </div>
               <div className="py-3 text-lg mb-3 pl-14 hover:border-black hover:shadow-inner border-b-2 border-solid">
                 <a href="/home">
-                  <span className="text-black">Chính sách bảo mật</span>
+                  <span className="text-white">Chính sách bảo mật</span>
                 </a>
               </div>
             </div>
@@ -35,12 +38,12 @@ const Footer = (props) => {
               </div>
               <div className="py-3 text-lg mb-3 pl-14 hover:border-black hover:shadow-inner border-b-2 border-solid">
                 <a href="/home">
-                  <span className="text-black">Thỏa thuận sử dụng</span>
+                  <span className="text-white">Thỏa thuận sử dụng</span>
                 </a>
               </div>
               <div className="py-3 text-lg mb-3 pl-14 hover:border-black hover:shadow-inner border-b-2 border-solid">
                 <a href="/home">
-                  <span className="text-black">Chính sách bảo mật</span>
+                  <span className="text-white">Chính sách bảo mật</span>
                 </a>
               </div>
             </div>
@@ -80,12 +83,12 @@ const Footer = (props) => {
             <div className="border-r-2 pr-12 w-1/2 text-center border-solid border-green-700 self-center text-lg md:block lg:col-start-1 xl:border-green-700 md:space-x-6 xl:w-full sm:border-none sm:w-full">
               <div>©2021 All rights reserved</div>
               <div>
-                <a href="/" className="text-black hover:text-red-800">
+                <a href="/" className="text-white hover:text-red-800">
                   Liên hệ quảng cáo : (028)568-985-14
                 </a>
               </div>
               <div>
-                <a href="/" className="text-black hover:text-red-800">
+                <a href="/" className="text-white hover:text-red-800">
                   Email : MovieWeb@gmail.com
                 </a>
               </div>
@@ -93,12 +96,12 @@ const Footer = (props) => {
             <div className="border-r-2 pr-12 w-1/2 text-center border-solid border-green-700 self-center text-lg md:block lg:col-start-1 md:space-x-6 sm:hidden xl:w-full xl:border-green-700 sm:border-none">
               <div>©2021 All rights reserved</div>
               <div>
-                <a href="/" className="text-black hover:text-red-800">
+                <a href="/" className="text-white hover:text-red-800">
                   Liên hệ quảng cáo : (028)568-985-14
                 </a>
               </div>
               <div>
-                <a href="/" className="text-black hover:text-red-800">
+                <a href="/" className="text-white hover:text-red-800">
                   Email : MovieWeb@gmail.com
                 </a>
               </div>

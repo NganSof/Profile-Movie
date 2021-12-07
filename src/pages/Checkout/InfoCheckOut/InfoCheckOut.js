@@ -4,6 +4,10 @@ import CurrencyFormat from "react-currency-format";
 import { Modal, Button, message } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { Booking } from "../../../redux/actions/QuanLyDatVe";
+import style from "../../../components/Card/Card.css";
+
+const { sha } = style;
+
 const InfoCheckOut = (props) => {
   const dispatch = useDispatch();
   const { thongTinPhim } = props.checkOut;
@@ -146,7 +150,7 @@ const InfoCheckOut = (props) => {
           fontSize: 25,
           fontWeight: "bold",
         }}
-        className="w-96 ml-8 mt-14 inline-block mb-28 pb-6 sm:w-32 sm:ml-0 md:ml-8 md:w-96"
+        className="sha w-96 ml-8 mt-14 inline-block mb-28 pb-6 sm:w-32 sm:ml-0 md:ml-8 md:w-96"
       >
         ĐẶT VÉ
       </Button>

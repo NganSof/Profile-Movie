@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Card } from "antd";
 import moment from "moment";
+import "./Card.css";
 
 const Cards = (props) => {
   const itemFilm = props.item;
@@ -25,7 +26,7 @@ const Cards = (props) => {
           {moment(itemFilm.ngayKhoiChieu).format("hh:mm A DD-MM-yyyy")}
         </div>
         <div className="flex justify-between items-center align-items-center">
-          <button className="font-mono shadow-lg p-2 text-black rounded-full text-xl hover:shadow-inner">
+          <button className="sha font-mono shadow-lg p-2 text-black rounded-full text-xl hover:shadow-inner">
             <NavLink to={`/detail/${itemFilm.maPhim}`} className="text-red-600">
               Show
             </NavLink>

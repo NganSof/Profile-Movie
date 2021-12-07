@@ -1,13 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useFormik } from "formik";
-import * as yup from "yup";
 import { NavLink } from "react-router-dom";
 import { getSearchFilm } from "../../../redux/actions/Carousel";
-
-// const schema = yup.object().shape({
-//   tenPhim: yup.string().required("Name is required"),
-// });
 
 const Search = (props) => {
   const dispatch = useDispatch();
@@ -15,19 +9,7 @@ const Search = (props) => {
     return state.QuanLyPhim;
   });
   const [value, setValue] = React.useState("");
-  // const formik = useFormik({
-  //   initialValues: {
-  //     tenPhim: "",
-  //   },
-  //   validationSchema: schema,
-  //   validateOnMount: true,
-  // });
 
-  // const handleSearch = (e) => {
-  //   e.preventDefault();
-  //   if (!formik.isValid) return;
-  //   dispatch(getSearchFilm(formik.values.tenPhim));
-  // };
   useEffect(() => {
     if (value) {
       const timer = setTimeout(() => {
@@ -44,9 +26,6 @@ const Search = (props) => {
     >
       <div className="bg-white flex items-center rounded-full shadow-xl w-full xl:text-lg xl:font-bold xl:w-1/2 md:ml-50 md:w-2/3 sm:w-72">
         <input
-          // onChange={formik.handleChange}
-          // onBlur={formik.handleBlur}
-          // value={formik.values.tenPhim}
           name="tenPhim"
           value={value}
           onChange={(e) => setValue(e.target.value)}
@@ -56,10 +35,7 @@ const Search = (props) => {
           placeholder="Phim bạn tìm"
         />
         <div className="p-4">
-          <button
-            className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center"
-            // onClick={handleSearch}
-          >
+          <button className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
